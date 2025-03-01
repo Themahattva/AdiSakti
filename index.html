@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Safety Alert</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Women's Safety Alert App</h1>
+        <p>Press "I'm Safe" regularly to check in. If no response for 5 minutes, an SOS will be sent.</p>
+        <form action="/checkin" method="post">
+            <button class="safe-btn" type="submit">I'm Safe ✅</button>
+        </form>
+        <form action="/sos" method="post">
+            <button class="sos-btn" type="submit">SOS 🚨</button>
+        </form>
+    </div>
+</body>
+</html>
